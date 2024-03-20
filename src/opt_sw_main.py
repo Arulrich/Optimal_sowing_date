@@ -7,8 +7,8 @@ Created on Tue Nov 21 11:49:36 2023
 define optimal sowing date for the main season
 """
 
-import pandas as pd
-import xarray as xr #  0.16.2
+import pandas as pd # v. 2.1.0
+import xarray as xr #  v. 0.16.2
 
 # the difference and the average between sowing dates is calculate differently as usual so that 
 # also sowing dates from the end of a year and from the start of the following year can be calculated properly 
