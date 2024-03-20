@@ -131,7 +131,12 @@ def sw_date_optimization(da_y, da_cv, maturation_time, ranking):
                     # decide optimal sowing date
                     opt_sw = def_opt_sw(overlap)
                     
-                    result_df_1 = result_df_1.append({'lat': overlap.iloc[0,1], 'lon': overlap.iloc[0,2], 'sowing_date': opt_sw}, ignore_index=True)
+                    # get index for the selection below
+                    first_row_name = overlap.index[0]
+                    lat_column = [col for col in overlap.columns if 'lat' in col][0]    
+                    lon_column = [col for col in overlap.columns if 'lon' in col][0]
+                    
+                    result_df_1 = result_df_1.append({'lat': overlap.loc[first_row_name,lat_column], 'lon': overlap.loc[first_row_name,lon_column], 'sowing_date': opt_sw}, ignore_index=True)
         
     return result_df_1, result_df_2
 
