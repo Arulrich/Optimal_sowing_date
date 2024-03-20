@@ -8,9 +8,9 @@ create netcdf files for ensemble of models
 """
 
 # import library
-import xarray as xr
-import os
-import numpy as np
+import xarray as xr # v. 0.16.2
+import os # 
+import numpy as np # v. 1.26.0
 
 def build_dataarray_ensemble(work_dir, sowing_dates):
     """Build a dataset of simulated yield for each sowing date and each season of the ensemble of models.
