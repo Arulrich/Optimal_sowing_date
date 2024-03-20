@@ -1,5 +1,5 @@
 # Optimal_sowing_date
-In this repository, you find the Python codes I used for the data analysis of my master's thesis `The effect of sowing date sources on yield estimates of spatialized crop growth models in Sub-Saharan Africa`.
+In this repository, you find the Python (v. 3.9.18) codes I used for the data analysis of my master's thesis `The effect of sowing date sources on yield estimates of spatialized crop growth models in Sub-Saharan Africa`.
 The first three codes have to be run one after the other (first 1) then 2) then 3)) and are for identifying the optimal simulated sowing dates. The fourth is for their visualization. The other codes are for comparison with the other sowing date sources (Crop Calendar and Observations). 
 For each code, I briefly explain what they do and => what are the output.
 
